@@ -1,0 +1,12 @@
+[package]
+name = "plugin-example"
+version = "0.1.0"
+authors = ["Andrew Gaspar <agaspar@lanl.gov>"]
+edition = "2018"
+
+[dependencies]
+core = { path = "core" }
+libloading = "0.5.2"
+
+[workspace]
+members = ["plugin_a", "plugin_b"]
