@@ -32,6 +32,6 @@ fn main() {
 
     for plugin in registrar.plugins {
         plugin.callback1();
-        plugin.callback2();
+        dbg!(plugin.callback2(7));
     }
 }

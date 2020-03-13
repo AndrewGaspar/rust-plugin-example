@@ -5,8 +5,9 @@ impl core::Plugin for PluginA {
         println!("PluginA::callback1")
     }
 
-    fn callback2(&self) {
-        println!("PluginA::callback2")
+    fn callback2(&self, i: i32) -> i32 {
+        println!("PluginA::callback2");
+        i + 1
     }
 }
 
